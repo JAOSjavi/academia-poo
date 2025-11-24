@@ -1,11 +1,10 @@
-root = "."
+root = "academia-poo"
 
 [build]
 builder = "NIXPACKS"
-# Maven wrapper is inside the academia-poo subdirectory
-buildCommand = "cd academia-poo && chmod +x mvnw && ./mvnw -DskipTests package"
+# Build directly inside the academia-poo subdirectory so mvnw is found
+buildCommand = "chmod +x mvnw && ./mvnw -DskipTests package"
 
 [deploy]
-# Run the jar from inside the academia-poo subdirectory
-startCommand = "cd academia-poo && java -jar target/academia-poo-0.0.1-SNAPSHOT.jar"
+startCommand = "java -jar target/academia-poo-0.0.1-SNAPSHOT.jar"
 restartPolicyType = "on_failure"
