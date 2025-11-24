@@ -1,0 +1,9 @@
+root = "academia-poo"
+
+[build]
+builder = "NIXPACKS"
+buildCommand = "./mvnw -DskipTests package"
+
+[deploy]
+startCommand = "java -jar target/academia-poo-0.0.1-SNAPSHOT.jar"
+restartPolicyType = "on_failure"
