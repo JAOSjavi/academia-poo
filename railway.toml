@@ -1,10 +1,7 @@
-root = "academia-poo"
+root = "."
 
 [build]
-builder = "NIXPACKS"
-# Build directly inside the academia-poo subdirectory so mvnw is found
-buildCommand = "chmod +x mvnw && ./mvnw -DskipTests package"
+builder = "DOCKERFILE"
 
 [deploy]
-startCommand = "java -jar target/academia-poo-0.0.1-SNAPSHOT.jar"
 restartPolicyType = "on_failure"
