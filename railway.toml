@@ -3,7 +3,7 @@ root = "."
 [build]
 builder = "NIXPACKS"
 # Maven wrapper is inside the academia-poo subdirectory
-buildCommand = "cd academia-poo && ./mvnw -DskipTests package"
+buildCommand = "cd academia-poo && chmod +x mvnw && ./mvnw -DskipTests package"
 
 [deploy]
 # Run the jar from inside the academia-poo subdirectory
