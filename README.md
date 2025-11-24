@@ -223,9 +223,6 @@ Para ver las consultas SQL ejecutadas, la propiedad `spring.jpa.show-sql=true` e
 ## 📄 Licencia
 
 Este proyecto es de uso educativo.
-
-## 👥 Autor
-
 Desarrollado como proyecto académico para demostrar conceptos de Programación Orientada a Objetos y arquitectura de software.
 
 ---
